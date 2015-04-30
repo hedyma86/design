@@ -1,0 +1,33 @@
+/*reset css*/
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,input,button,textarea,select,p,blockquote,th,td{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img,iframe{border:0}
+address,cite,dfn,em,var,i{font-style:normal}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+body{font:12px/1.5 tahoma,\5b8b\4f53;color:#666}
+a{text-decoration:none}
+input,label,form{padding:0;margin:0;}
+select, textarea, img, fieldset, input{vertical-align:middle;}
+dl,ul,dt,dd,input{font:12px/20px tahoma,宋体;}
+
+
+
+.wrap{width:1080px;height:1920px;background:#fff;border:1px #ccc solid;position:relative;/*position:absolute;left:0;top:0;*/float:left;margin:10px;overflow:hidden;}
+.contentwrap,.otherwrap,.slogon,.decoration,.major{position:absolute;}
+.contentwrap{/*width:30%;padding:8%;*/z-index:5;}
+.otherwrap{/*width:15%;padding:4%;*/z-index:5;}
+.slogon{/*padding:1%;*/z-index:5;}
+.major{z-index:4;}
+.decoration{z-index:3}
+h1,h2{text-align:justify;text-align-last:justify;margin-bottom:4%; white-space:nowrap;-moz-text-align-last:justify;}
+h1{}
+.bgimg{width:100%;height:100%;}
+table{width:100%;height:100%;}
+
+/*竖排样式
+.slogon{width:20px}
+*/

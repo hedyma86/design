@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<style type="text/css">	
+</style>
+<body>
+<div class="form1">
+	<form>
+		主标题：
+		<input type="text" name="title" value="设计箴言"  id="" />
+		副标题：
+		<input type="text" value="黑川雅之谈设计创新" name="subtitle"  id="" />
+		活动口号：
+		<input type="text" name="slogan" value="中国设计周系列活动之大师讲座" id="" />
+		活动描述：
+		<textarea name="mainbody" id="" cols="30" rows="10" readonly>
+		讲者简介:
+		黑川雅之，世界著名的建筑与工业设计师，被誉为开创日本建筑和工 业设计新时代的代表性人物。他成功地将东西方审美理念融为一体，形成 优雅的艺术风格。著名的美国纽约现代艺术博物馆将他的作品列为重要 馆藏物。他设计的作品主要有灯具、照相机、饰品、手表、工业产品等。　
+		个人简历：
+		1967 年获早稻田大学建筑博士
+		1967 年成立黑川雅之建筑设计事务所
+		2001 年成立 DESIGNTOPE 公司
+		日本建筑协会会员、日本工业设计师协会主席
+		讲座内容：
+		作为日本建筑和工业造型设计界的代表人物，今年 70 岁的黑川雅之 本身就像是一部活的工业文明发展史。“生命与性”的哲学理念是他设计 的永恒主题，他如同一个诗人，在时间与空间中不断探索，寻找着人类灵 魂的栖息地。 </textarea>
+		活动时间:
+		<input type="text" name="time" value="2015.6.5 上午8:00-12:00" id="" />
+		活动地点：
+		<input type="text" name="place" value="清华大学美术学院学术报告厅A30" id="" />
+		<input type="hidden" name="dner" />
+	</form>
+</div>
+<div class="form2">
+	<ul>
+		<li dner="designer1" class="selected">田中一光</li>
+	</ul>
+</div>
+<button id="btnsubmit">确定</button>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/designer.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	$('#btnsubmit').click(collectInfo);
+
+	function collectInfo(){
+		var domForm=$('form');
+		var arrDner=[];
+		$('.form2 .selected').each(function(){
+			arrDner.push($(this).attr('dner'));
+		});
+		var opt={
+			title:domForm.find('input[name=title]').val(),
+			subtitle:domForm.find('input[name=subtitle]').val(),
+			slogan:domForm.find('input[name=slogan]').val(),
+			time:domForm.find('input[name=time]').val(),
+			place:domForm.find('input[name=place]').val(),
+			dner:arrDner,
+			total:60
+		};
+		initSaveForm(opt);	
+	}
+
+
+</script>
+</body>
+</html>
+
+

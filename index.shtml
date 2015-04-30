@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="css/base.css" type="text/css" rel="stylesheet" />
+<style type="text/css">
+
+	
+</style>
+<body>
+<!--背景色-->
+<div class="wrap">
+	<!--图片背景-->
+	<div class="bgimg">
+		<div class="contentwrap">
+			<h1><span>设计箴言</span></h1>
+			<h2><span>黑川雅之谈设计创新</span></h2>
+			<div class="content">
+				<h3><span>讲者简介:</span></h3><span>
+黑川雅之，世界著名的建筑与工业设计师，被誉为开创日本建筑和工
+业设计新时代的代表性人物。他成功地将东西方审美理念融为一体，形成
+优雅的艺术风格。著名的美国纽约现代艺术博物馆将他的作品列为重要
+馆藏物。他设计的作品主要有灯具、照相机、饰品、手表、工业产品等。　</span>
+<h3><span>个人简历：</span></h3>
+<span>1967 年获早稻田大学建筑博士<br />
+1967 年成立黑川雅之建筑设计事务所<br />
+2001 年成立 DESIGNTOPE 公司<br />
+日本建筑协会会员、日本工业设计师协会主席</span>
+<h3><span>讲座内容：</span></h3>
+<span>作为日本建筑和工业造型设计界的代表人物，今年 70 岁的黑川雅之
+本身就像是一部活的工业文明发展史。“生命与性”的哲学理念是他设计
+的永恒主题，他如同一个诗人，在时间与空间中不断探索，寻找着人类灵
+魂的栖息地。</span>
+			</div>
+		</div>
+		
+		<div class="otherwrap">
+			<div>
+				<dl>
+					<dt><span>／活动时间：</span></dt>
+					<dd><span>2015.6.5－6.8 每日 8:00-18:00</span></dd>
+				</dl>
+				<dl>
+					<dt><span>／活动地点：</span></dt>
+					<dd><span>清华大学美术学院 B264</span></dd>
+				</dl>
+				<dl>
+					<dt><span>／主办单位：</span></dt>
+					<dd><span>清华大学美术学院视觉传达系清华大学学生会</span></dd>
+				</dl>				
+			</div>
+		</div>
+		<!--slogan-->
+		<p class="slogon">中国设计周系列活动之大师讲座</p>
+		<!--主角元素:-->
+		<i class="major"></i>
+		
+		<!--配角元素-->
+		<div></div>
+		<!--装饰元素: 9宫格 和16 宫格 的 可以借助table实现-->
+		<table class="decoration">
+			
+		</table>
+		
+		
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/designer.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	initShowPg();
+</script>
+</body>
+</html>
+
+
